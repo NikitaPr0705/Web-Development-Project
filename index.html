@@ -1,4 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web Developmant Project">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/outlines.css"> -->
+        <title>Web Development Project</title>
+    </head>
+    <body>
+        <header class="header page-header">
+            <div class="header__wrapper page-header__wrapper">
+                <div class="header__wrapper--inner page-header__wrapper--inner">
+            <span class="header__logo">Your Logo</span>
+            <nav class="header-nav page-header__nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Home</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">About</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Servicing</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Portfolio</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Blog</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="19px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="19px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M497.913,497.913c-18.782,18.782-49.225,18.782-68.008,0l-84.862-84.863c-34.889,22.382-76.13,35.717-120.659,35.717  C100.469,448.767,0,348.312,0,224.383S100.469,0,224.384,0c123.931,0,224.384,100.452,224.384,224.383  c0,44.514-13.352,85.771-35.718,120.676l84.863,84.863C516.695,448.704,516.695,479.131,497.913,497.913z M224.384,64.109  c-88.511,0-160.274,71.747-160.274,160.273c0,88.526,71.764,160.274,160.274,160.274c88.525,0,160.273-71.748,160.273-160.274  C384.657,135.856,312.909,64.109,224.384,64.109z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            </div>
+            <section class="company-info page-header__company-info">
+                    <div class="company-info__wrapper page-header__company-info--wrapper">
+                        <h1 class="company-info__headline company-info__headline--indent">Web development project</h1>
+                        <p class="company-info__text company-info__text--indent">Very suitable to support all web development projects</p>
+                    </div>
+                    <div class="company-info__buttons--wrapper buttons-info-wrapper">
+                        <button class="company-info__button company-info__button--services">Our services</button>
+                        <button class="company-info__button company-info__button--hire">Hire is now</button>                                             
+                    </div>
+                    <div class="company-info__scroll-down company-info__scroll-down--indent">
+                        <a href="#main-section">
+                        <img class="company-info__img company-info__img--scroll-down" src="./img/scroll-down-icon.png" alt="Scroll Down">
+                        </a>
+                    </div>
+                </section>
+        </header>
+        <main class="main page-main">
+            <section class="main-section page-main__section" id="main-section">
+                <section class="about-us page-main__about-us">
+                    <div class="about-us__wrapper page-main__about-us--wrapper">
+                        <h2 class="about-us__headline about-us__headline--indent">About Us</h2>
+                        <p class="about-us__text about-us__text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="advantages__wrapper advantages__wrapper--indent">
+                        <ul class="about-us__list about-us__list--indent">
+                            <li class="about-us__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 62 62">
+  <image id="internet" width="62" height="62" xlink:href="data:img/png;base64,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"/>
+</svg>
+                                <h3 class="about-us__item-headline about-us__item-headline--indent">Awesome Icons</h3>
+                                <p class="about-us__item-text about-us__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                            </li>
+                            <li class="about-us__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="60" viewBox="0 0 70 60">
+  <image id="transfer" width="70" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA8CAYAAADbl8wjAAAF7ElEQVR4nO2ceYhVVRzHP6k1lo6mZjsSk2EGYgtllssf0QYJlmKk/SGEBi1mRWWYVGRRFi3QRlS0aEURFS1UIGXQCppNtttiZWYuZY5NNs1MnPF76HjPvfe8N+/e+242H7jc987vnPP73d/cs/3OebMbxTISmAiMBo4AmoChQINjRTuwAfgW+BxoBt4BPijY1tw5FbgbWAt0xly/AauBVcDXwPqYPObaAjwCnAX0+686YyAwVw/tPtxbwDzgeOAAr9TO7KM3aw7wItAWqesG4CCvVEnpA9wYeYAH9Nb0zcDk8cDNwDan/gflxNIyQ32DMbYVmA/sn5Ox5g8wC/jOcdAcL9cOLgXu9FILYC/gMcfARcAeBeqf6+heBhwckW+VbHevZI4cA2yU4jeA4UUqdxgALHYcNMmRrVJaFk25IqY5hlxZlNIAM2JsWqrve6YXzd6ASZ60vpiRbJNsmw28oM+5D/FjHaeM9KTl4UnZ2K5+prEay/p4KWHWAAuBZ4DPSuSIyZof9QI2Ay1KN9/7F935lomVMbNle/2k0bNiil4r5cl+Wnu1O1eHrnXqd3rooYdiqbaPMaPYOGCw1kMr1X7LiLHxOM1ffldMZ1vWdvbXQiyux38VOMorUT9GaCoRZ+tD6qSDVPLGmKn0R8BhWj0/r2BSo6JxRyrfRMVb6omx8UvpN0Gv1xQTGgKcDgzT6DRc6TXxprx9fUIlp0jepjBlvWjQfMXYcm6CDRdK/oknqZLDnZVzGlco38KUPHkzSzbcHtCzRPnGe5IquECVTK6gSKeaXL14TjYMCeg/Wvlu8iQOvbyUnRmob1s9STyDY1OLwepuC2izI1NqzDnkmA7dK12AdXgpxWF1hxbGFT1LyDGdulc63ymDY0K2WnmqrSHH/G8JOcbK//Yk8fSOTS0Gqztka7vuqU0u5BjbHls8STxF7g5EsbZu8SQ786u+pTa5kGPs8HtJoKKpkfz14EPpvDyg+3zd3/ckVWCc8bY64SkJxfpJbhZqozxpcZjh93vZckiC1lGSfxGK6FUyKi3R53096Q7sfs1y4GNPWhxmlf+StCUFvg/U3ewc/OFJq3CMYW/dkyqynVkZRji7d5Q0yWvVPbiV0jNcJ1CJY2wvnzRjtHW0e5Li2S6NSdMG+ww1B6zGKb5h+pqZnnQHjU4gKClPEUxVU+lUXCYOu1lo+qOTY+RBmpytTXPdr43zJC5y8poe/6SEfHlgNtlWOPrnpbQE8ybd5uRdqi3dinAf0hQ8ocJyw+RAW/a+lNEhC8zM9VZH36Mpb0qUMcDLEWcmMtQ5GfAXMD0pY4DR2rrtVLhibHr2bmEONv4oHWv01nSHyc5xuOVx85/T1Hnao1v9MzB+jvMXWeBJu8/FTr3zM6ivIRLoP8cKjnUSZ3vFasNsX/yiuq/LoD7bzNu623mmMN3xgwmcd61vzJcTk8vUhHn7vpGOirYuEujLv8df8zqtaWPc5o/Z9WGtlyVbrpKeWkarEarjYU+SLe8ZPXZYS5ruZ4XVkxo1C2BX93lPJLt8YQ1ODdpkgJ1x1uKYauPP3aWrfuuYYTkrG6R76lI/gA2C5b2p17V70EfxlvWeOFtWaGmxuoZa1yqsscyTZMvrwIScdfSwy5EWx43jWp1q6K2IXj99Nh3Wp/oxxfaYcrs8rc7scJPWQma74k+tNRpK5oARRR2Vb478HKbMLJCd5xVh4zrFW56W0ie8HOXgLtm3uYpQRE20OEOu/bVHswJbZaDROQ6yqsiDTBsjU/I7nKY1zctdLBP0hhhbXin6cLd1gsuUyEHFQl5dhwE6dGhtCO1E5sK7CbPXJv2V3F+55d28zMmpqzUq2iY90ctVIEmBZsOZwM+ROOwYL1dtmFOit0SOqV5WT4dUw0yNYNZws699r/qBgVXW1aCY7iJnb9pe1zg7pZmSdwd1ho6Wnh1J/wH4SvcN2gBr1aJ2kEYXE5g+VJeLObv7FPBsFWcDS4tZMphR6x6tkJN+VxR3mX9l8LgmaqETmdkA/AN4nZg77gE6nQAAAABJRU5ErkJggg=="/>
+</svg>
+                                <h3 class="about-us__item-headline about-us__item-headline--indent">One Page</h3>
+                                <p class="about-us__item-text about-us__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                            </li>
+                            <li class="about-us__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="63" viewBox="0 0 57 63">
+  <image id="head" width="57" height="63" xlink:href="data:img/png;base64,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"/>
+</svg>
+                                <h3 class="about-us__item-headline about-us__item-headline--indent">Fully Responsive</h3>
+                                <p class="about-us__item-text about-us__item-text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="our-services page-main__our-services">
+                    <div class="our-services__block our-services__block--indent">
+                        <h2 class="our-services__headline our-services__headline--indent">Our Services</h2>
+                        <p class="our-services__text our-services__text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <nav class="services-nav__block">
+                        <ul class="services-nav__list services-nav__list--indent">
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Research</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Portfolio</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Support</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Documentation</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Development</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                            <li class="services-nav__item services-nav__item--indent">
+                                <svg class="services-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="62" viewBox="0 0 56 62">
+  <image id="smartphone_copy" data-name="smartphone copy" width="56" height="62" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA+CAYAAAB+39gDAAAEAUlEQVRoge2bTWhcVRTHf5Nk0rTNtE2t1CrSllLoTlyYiqG6UwuloBvRYMhCmlVDmkATKq4UQRcRqW4sIgQUtLWxIAVxY9fFjyDuArpoawOpJk21jROn5TbnwXHOzGTezL3vzYz5weV9nHvve/93z/14976HYhz4CVgGCgmEf4FZ4E0S4FvgborhB6AzhMwMMAh8IscjwHdSim0m9ipzkq5DHojbz8sNdgPzQFbyeMSkXsWVYDvwGPAx0AWcAY6ZmB74WW50sMqs+oAvgQvAV7I9B+wR+2fANPCCSVmaZ5XnbCsZo06izLNVZvN+GVd+DehRx1+blOX5S9IcLBujDgqSeRx2AbuBR2W7U6XtkfNxmA8l0NWjP4HtwCWpN2txG/hdWsGM3Fi7iHJe8BuwIg9h8xp5IXV9q+wXjNWDwDuy/7SxtgAd6ukNADcqtJ4hKEjr+ymwKdRFVmqog775Q+7hCd8Zt0ldcjxkrMmQDek1SbpjKqwLbHbSENgPHDVnA7IsLVgSjcxJNZSLHq5rZBZCtaIkKPB1JW5EnW8JgVrccJGt6QWOK3FvG2uTCxxV4iaMdZWmFVjJLTVNKVCLGzXW/+IE3gz5wutb4IQS946xWrIq/pPG6gGfAidilJxmEjhf5QtybHwJrLbOJY4PgVrcgLGmSIeHSztXfEv2PwKmgC0yT5M29+d46inBV4umDudKTCemGfL1vk3cKjpeMTHS5Z96XdTNYB8HTsuxm+wdkomkIGsNMcj4cNGIMeWGQ8aaMr66iX4lctJYU8RnR/9KjSJdJz8j0/7e8T1UG40pUg/V+ozVAyEG27pOnjJWK3BR4vYaa4MKJEadbOoX3mrqZNNPWeg6+a6xtsik07AS+UaRrWWmDYvdNSPnW0Yg8ioViYzeNoIK9PG6FIcpWVFeUMt2QUlaoOMLcyYg66tLzc7/QmDUml031mTIh2xwXCPzN5CTDngx4VKNuotgn5A4rjTQJFGQfjB6et9IH5Uxscrj4l+Tz7s6ZbCQKxvbEq30Hg7ZZeXlQrXiPsR7CthbRx7BPgRCDdV2GEtluuRbUe1i3wMPV0xlyTTqWPRHJeyyysfV6Q0mdnkacrD9kqRZkM+SEVedqWFlKajAWruE52T7oYhCpu3HZP95kyIlahW4JNt9RecPFNkbgqgVfTDGzfSq+udKbT/wsnL3IyZFedpVKxpkCTu60Y3GUpn3SnTULnxeMVVplkIuYc/W8NQjngHOAr8AF6UU4/K4ejhxvKhqTkjmbhz6ovSHOfnUuVLoUnl0q/1shTRRyMk/EoeAq3L9aXNnnshICZRyt2rDsvo9oZbghnsPhBLocB3zB8CvCQ+uXdfifiuKO4qqDuAexpj53f8OFXAAAAAASUVORK5CYII="/>
+</svg>
+
+                                <h3 class="services-nav__headline services-nav__headline--indent">Design</h3>
+                                <p class="services-nav__text services-nav__text--indent">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                                <button class="services-nav__button services-nav__button--indent"><a class="services-nav__link" href="#">Read More</a></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="latest-works page-main__latest-works">
+                    <div class="latest-works__block latest-works__block--indent">
+                        <h2 class="latest-works__headline latest-works__headline--indent">Latest Works</h2>
+                        <p class="latest-works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                        <form method="get" action="#" class="latest-works__form latest-works__form--indent">
+                            <label class="latest-works__label latest-works__label--all" for="all">All</label>
+                            <input class="latest-works__input" type="radio" name="all" id="all">
+                            <label class="latest-works__label" for="web-design">Web Design</label>
+                            <input class="latest-works__input" type="radio" name="web-design" id="web-design">
+                            <label class="latest-works__label" for="ui-ux-design">UI/UX Design</label>
+                            <input class="latest-works__input" type="radio" name="ui-ux-design" id="ui-ux-design">
+                            <label class="latest-works__label" for="mockups">Mockups</label>
+                            <input class="latest-works__input" type="radio" name="mockups" id="mockups">
+                        </form>
+                        <ul class="latest-works__list latest-works__list--indent">
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--one"><img class="latest-works__item-img" src="./img/smart-watches.png" alt="Smart Watches"></a>
+                            </li>
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--two"><img class="latest-works__item-img" src="./img/one-day-pass.png" alt="One Day Pass"><a>
+                            </li>
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--three"><img class="latest-works__item-img" src="./img/frank-oak.png" alt="Frank Oak"></a>
+                            </li>
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--four"><img class="latest-works__item-img" src="./img/flask.png" alt="Flask"></a>
+                            </li>
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--five"><img class="latest-works__item-img" src="./img/bottle.png" alt="Bottle"></a>
+                            </li>
+                            <li class="latest-works__item latest-works__item--indent">
+                                <a href="#" class="latest-works__item-link latest-works__item-text--six"><img class="latest-works__item-img" src="./img/bagpack.png" alt="Bagpack"></a>
+                            </li>
+                        </ul>
+                        <button class="latest-works__button latest-works__button--indent"><a href="#" class="latest-works__button-link">View All</a></button>
+                </section>
+                <section class="pricing-plan page-main__pricing-plan">
+                    <div class="pricing-plan__block pricing-plan__block--indent">
+                        <h2 class="pricing-plan__headline pricing-plan__headline--indent">Pricing Plan</h2>
+                        <p class="pricing-plan__text pricing-plan__text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <ul class="pricing-plan__list pricing-plan__list--indent">
+                        <li class="pricing-plan__item pricing-plan__free-trial pricing-plan__item--indent">
+                            <div class="pricing-plan__item--wrapper pricing-plan__item--wrapper-indent">
+                                <p class="pricing-plan__item--text pricing-plan__item-text--indent">Free Trial</p>
+                                <p class="pricing-plan__item--price pricing-plan__item--price-indent"><sup>$</sup>00<sub>per month</sub></p>
+                                <ul class="pricing-plan__item--list">
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>30 Free Trial</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>5 Free Projects</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>PHP 5 Enabled</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>24/7 Supports</span></li>
+                                </ul>
+                                <button class="button__order-now button__order-now--indent">Order Now</button>                                
+                            </div>
+                        </li>
+                        <li class="pricing-plan__item pricing-plan__basic pricing-plan__item--indent">
+                            <div class="pricing-plan__item--wrapper pricing-plan__item--wrapper-indent">
+                                <p class="pricing-plan__item--text pricing-plan__item-text--indent">Basic</p>
+                                <p class="pricing-plan__item--price pricing-plan__item--price-indent"><sup>$</sup>50<sub>per month</sub></p>
+                                <ul class="ricing-plan__item--list">
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>30 Free Trial</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>5 Free Projects</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>PHP 5 Enabled</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>24/7 Supports</span></li>
+                                </ul>
+                                <button class="button__order-now button__order-now--indent">Order Now</button>                                
+                            </div>
+                        </li>
+                        <li class="pricing-plan__item pricing-plan__ultimates pricing-plan__item--indent">
+                            <div class="pricing-plan__item--wrapper pricing-plan__item--wrapper-indent">
+                                <p class="pricing-plan__item--text pricing-plan__item-text--indent">Ultimates</p>
+                                <p class="pricing-plan__item--price pricing-plan__item--price-indent"><sup>$</sup>99<sub>per month</sub></p>
+                                <ul class="ricing-plan__item--list">
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>30 Free Trial</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>5 Free Projects</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>PHP 5 Enabled</span></li>
+                                    <li class="pricing-plan__item--line pricing-plan__item--line-indent"><span>24/7 Supports</span></li>
+                                </ul>
+                                <button class="button__order-now button__order-now--indent">Order Now</button>                                
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="our-team-member page-main__our-team-member">
+                     <div class="our-team-member__block our-team-member__block--indent">
+                        <h2 class="our-team-member__headline our-team-member__headline--indent">Our Team Member</h2>
+                        <p class="our-team-member__text our-team-member__text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <ul class="our-team-member__list our-team-member__list--indent">
+                        <li class="our-team-member__item">
+                            <img class="our-team-member__img" src="./img/member-one.png" alt="John Doe">
+                            <p class="our-team-member__name our-team-member__name--indent">John Doe</p>
+                            <p class="our-team-member__position our-team-member__position--indent">General Manager</p>
+                            <div class="our-team-member__social our-team-member__social--indent">
+                                <ul class="our-team-member__social-list our-team-member__social-list--indent">
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-facebook.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-twitter.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-wechat.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-dribble.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="our-team-member__item">
+                            <img class="our-team-member__img" src="./img/member-two.png" alt="Alexa Biru">
+                            <p class="our-team-member__name our-team-member__name--indent">Alexa Biru</p>
+                            <p class="our-team-member__position our-team-member__position--indent">Office Director</p>
+                            <div class="our-team-member__social our-team-member__social--indent">
+                                <ul class="our-team-member__social-list our-team-member__social-list--indent">
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-facebook.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-twitter.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-wechat.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-dribble.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="our-team-member__item">
+                            <img class="our-team-member__img" src="./img/member-three.png" alt="Ronobir Sing">
+                            <p class="our-team-member__name our-team-member__name--indent">Ronobir Sing</p>
+                            <p class="our-team-member__position our-team-member__position--indent">Admin</p>
+                            <div class="our-team-member__social our-team-member__social--indent">
+                                <ul class="our-team-member__social-list our-team-member__social-list--indent">
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-facebook.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-twitter.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-wechat.png"></a>
+                                    </li>
+                                    <li class="our-team-member__social-item">
+                                        <a class="our-team-member__social-link" href="#"><img src="./img/social-dribble.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="our-team-member__slider-list--wrapper our-team-member__slider-list--wrapper-indent">
+                        <ul class="our-team-member__slider-list our-team-member__slider-list--indent">
+                            <li class="our-team-member__slider-item"><span class="our-team-member__slider-circle"></span></li>
+                            <li class="our-team-member__slider-item"><span class="our-team-member__slider-circle"></span></li>
+                            <li class="our-team-member__slider-item"><span class="our-team-member__slider-circle"></span></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="blog page-main__blog">
+                    <div class="blog-block blog-block--indent">
+                        <h2 class="blog__headline blog__headline--indent">Blog</h2>
+                        <p class="blog__text blog__text--indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="blog-block__articles-wrapper blog-block__articles-wrapper--indent">
+                        <article class="blog__article article article--one">
+                            <img class="article__img" src="./img/seo.png">
+                            <div class="article__wrapper">
+                                <h3 class="article__headline article__headline--indent"><a href="#" class="article__link">SEO Quis Vestibulum</a></h3>
+                                <div class="article__wrapper--inner">
+                                    <img class="article__image--calendar" src="./img/calendar.png" alt="Calendar">
+                                    <time class="article__date article__date--indent" datetime="14.07.2017">14.07.2017</time>
+                                    <img class="article__image--document" src="./img/document.png" alt="Document">
+                                    <p class="article__part article__part--indent">Development</p>
+                                </div>
+                                <p class="article__text article__text--indent">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                            </div>
+                        </article>
+                        <article class="blog__article article article--two">
+                            <img class="article__img" src="./img/ipad-keyboard.png">
+                            <div class="article__wrapper">
+                                <h3 class="article__headline article__headline--indent"><a href="#" class="article__link">SEO Quis Vestibulum</a></h3>
+                                <div class="article__wrapper--inner">
+                                    <img class="article__image--calendar" src="./img/calendar.png" alt="Calendar">
+                                    <time class="article__date article__date--indent" datetime="14.07.2017">14.07.2017</time>
+                                    <img class="article__image--document" src="./img/document.png" alt="Document">
+                                    <p class="article__part article__part--indent">Development</p>
+                                </div>
+                                <p class="article__text article__text--indent">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                            </div>
+                        </article>
+                        <article class="blog__article article article--three">
+                            <img class="article__img" src="./img/ipad-water-glass.png">
+                            <div class="article__wrapper">
+                                <h3 class="article__headline article__headline--indent"><a href="#" class="article__link">SEO Quis Vestibulum</a></h3>
+                                <div class="article__wrapper--inner">
+                                    <img class="article__image--calendar" src="./img/calendar.png" alt="Calendar">
+                                    <time class="article__date article__date--indent" datetime="14.07.2017">14.07.2017</time>
+                                    <img class="article__image--document" src="./img/document.png" alt="Document">
+                                    <p class="article__part article__part--indent">Development</p>
+                                </div>
+                                <p class="article__text article__text--indent">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="article__button article__button--indent"><a href="#" class="article__button-link">More View</a></button>
+                </section>
+            </section>
+        </main>
+        <footer class="footer page-footer">
+            <section class="contact-us contact-us--indent">
+                    <div class="contact-us__wrapper contact-us__wrapper--indent">
+                        <h2 class="contact-us__headline contact-us__headline--indent">Contact Us</h2>
+                        <p class="contact-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <section class="contact-us__section contact-us__section--indent">
+                        <ul class="contact-us__list">
+                            <li class="contact-us__item contact-us__item--point-map">
+
+                                <p class="contact-us__item-text">Nobinagar savar,Dhaka Bangladesh</p>
+                            </li>
+                            <li class="contact-us__item contact-us__item--phone">
+
+                                <p class="contact-us__item-text">+8801743331996 +8801928737807</p>
+                            </li>
+                            <li class="contact-us__item contact-us__item--mail">
+
+                                <p class="contact-us__item-text">quickmasud@gmail.com quickmasud@yahoo.com</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <form class="contact-us__form contact-us__form--indent" action="#" method="post">
+                        <input class="contact-us__input contact-us__input--indent" type="text" name="name" placeholder="Your NAME">
+                        <input class="contact-us__input contact-us__input--indent" type="email" name="email" placeholder="Your Email">
+                        <textarea class="contact-us__textarea contact-us__textarea--indent" placeholder="Write Message"></textarea>
+                        <button class="contact-us__button contact-us__button--indent" type="button">Send</button>
+                    </form>
+                </section>
+                <div class="contact-us__policy">
+                    <span class="contact-us__policy-text contact-us__policy-text--indent">All rights Reserved © 2017</span>
+                </div>
+        </footer>
+    </body>
 </html>
