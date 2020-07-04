@@ -23,20 +23,20 @@ p {
 }
 
 .visually-hidden:not(:focus):not(:active),
-    input[type="checkbox"].visually-hidden,
-    input[type="radio"].visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        -webkit-clip-path: inset(100%);
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-} 
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 
 body {
 	width: 100%;
@@ -93,7 +93,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 635px;
-	/*max-width: 705px;*/
 }
 
 .header__logo {
@@ -134,8 +133,8 @@ body {
 	max-width: 1170px;
 	color: #ffffff;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .company-info__headline--indent {
@@ -189,12 +188,6 @@ body {
 	transition: 0.1s linear;
 }
 
-/*.company-info__button--services {
-	
-	
-	border: none;
-}*/
-
 .company-info__scroll-down {
 	width: 100%;
 	max-width: 23px;
@@ -206,11 +199,6 @@ body {
 	margin: 0 auto;
 	margin-top: 95px;
 }
-
-/*.company-info__img {
-	display: inline-block;
-	
-}*/
 
 .about-us {
 	width: 100%;
@@ -244,7 +232,6 @@ body {
 	font-size: 15px;
 	line-height: 22px;
 	font-weight: 400;
-
 }
 
 
@@ -293,8 +280,6 @@ body {
 	font-weight: 400;
 	width: 100%;
 	max-width: 270px;
-	/*hyphens: auto;*/
-	/*letter-spacing: 1px;*/
 }
 
 .about-us__item-text--indent {
@@ -420,8 +405,7 @@ body {
 	text-transform: uppercase;
 }
 
-.services-nav__item:hover
- {
+.services-nav__item:hover {
 	background-color: #00897b;
 	color: #ffffff;
 	box-shadow: 0px 7px 20px grey;
@@ -522,15 +506,6 @@ body {
 	max-width: 370px;
 }
 
-.latest-works__item-link {
-
-}
-
-.latest-works__item-img {
-
-}
-
-
 
 .latest-works__item--indent {
 	margin-bottom: 30px;
@@ -568,7 +543,7 @@ body {
 }
 
 .pricing-plan {
-	background-color: #f0f1f1; 
+	background-color: #f0f1f1;
 }
 
 .pricing-plan__block {
@@ -622,14 +597,15 @@ body {
 	max-width: 370px;
 	display: flex;
 	justify-content: center;
-	background-color: #ffffff;
+	background: linear-gradient(-186deg, #3949ab 0%, #3949ab 29%, #ffffff 29%, #ffffff 100%);
 	padding-top: 43px;
 	padding-bottom: 60px;
+
 }
 
-.pricing-plan__item::before {
-	width: 
-}
+/* .pricing-plan__item::before {
+	width:
+} */
 
 .pricing-plan__item:hover {
 	box-shadow: 0px 7px 20px grey;
@@ -650,6 +626,13 @@ body {
 	font-weight: 400;
 
 }
+
+.pricing-plan__item--price-color,
+.pricing-plan__item--text-color {
+	color: #ffffff;
+}
+
+
 
 .pricing-plan__item-text--indent {
 	margin-bottom: 38px;
@@ -735,7 +718,7 @@ sub {
 }
 
 .our-team-member__block--indent {
-		margin: 0 auto;
+	margin: 0 auto;
 	padding-top: 118px;
 	margin-bottom: 128px;
 }
@@ -746,7 +729,7 @@ sub {
 }
 
 .our-team-member__headline {
-font-size: 30px;
+	font-size: 30px;
 	line-height: 27px;
 	font-weight: bold;
 }
@@ -757,7 +740,7 @@ font-size: 30px;
 }
 
 .our-team-member__text {
-font-size: 15px;
+	font-size: 15px;
 	line-height: 22px;
 	font-weight: 400;
 	width: 100%;
@@ -897,9 +880,6 @@ font-size: 15px;
 	margin-bottom: 129px;
 }
 
-.blog-block__articles-wrapper {
-
-}
 
 .blog-block__articles-wrapper--indent {
 	margin: 0 auto;
@@ -930,9 +910,7 @@ font-size: 15px;
 	display: flex;
 }
 
-.article__headline {
-
-}
+.article__headline {}
 
 .article__headline--indent {
 	margin-top: 58px;
@@ -940,7 +918,7 @@ font-size: 15px;
 }
 
 .article__link {
-		font-size: 25px;
+	font-size: 25px;
 	line-height: 22px;
 	font-weight: 400;
 	color: #00897b;
@@ -983,9 +961,9 @@ font-size: 15px;
 .article__button {
 	width: 100%;
 	max-width: 220px;
-	
+
 	background-color: #00897b;
-	
+
 	padding: 25px 0;
 	border: none;
 }
@@ -993,7 +971,6 @@ font-size: 15px;
 .article__button--indent {
 	display: block;
 	margin: 0 auto;
-	/*text-align: center;*/
 }
 
 .article__button-link {
@@ -1188,7 +1165,7 @@ font-size: 15px;
 	font-family: "Roboto", sans-serif;
 	font-size: 20px;
 	line-height: 22px;
-	font-weight: 500;	
+	font-weight: 500;
 	display: block;
 	width: 100%;
 	max-width: 268px;
@@ -1197,4 +1174,3 @@ font-size: 15px;
 .contact-us__policy-text--indent {
 	margin: 0 auto;
 }
-
